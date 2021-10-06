@@ -23,7 +23,7 @@ WHERE last_name LIKE '%e%' ORDER BY emp_no DESC;
 SELECT * FROM employees
 WHERE birth_date LIKE '%12-25';
 
-SELECT * FROM employees
+SELECT *, datediff(NOW(),hire_date) FROM employees
 WHERE birth_date LIKE '%12-25'
 AND YEAR(hire_date) BETWEEN 1990 AND 1999
 ORDER BY hire_date DESC;

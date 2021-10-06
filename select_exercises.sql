@@ -4,7 +4,7 @@ USE codeup_test_db;
 SELECT name FROM albums
 WHERE artist = 'Pink Floyd';
 
-SELECT release_date FROM albums
+SELECT release_date AS 'The year SGT Pepper released' FROM albums
 WHERE name = 'Sgt. Peppers Lonely Hearts Club Band';
 
 SELECT genre FROM albums
